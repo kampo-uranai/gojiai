@@ -916,7 +916,7 @@ input, button, textarea, select {
 
 .kokoro-type-name {
   font-family: 'Zen Old Mincho', serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 500;
   letter-spacing: 0.06em;
   color: #ffffff;
@@ -1878,7 +1878,7 @@ input, button, textarea, select {
 
 .forecast-month-label {
   font-family: 'Zen Old Mincho', serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: normal;
   color: var(--ink-2);
@@ -2495,7 +2495,7 @@ footer {
 
 .kokoro-tea-name {
   font-family: 'Zen Old Mincho', serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--ink);
   letter-spacing: 0.08em;
@@ -2596,7 +2596,7 @@ footer {
 /* ── ヒーロー内：体質タイプ帯 ── */
 .kokoro-taishitsu-band {
   margin: 18px -22px -22px;
-  padding: 12px 22px 14px;
+  padding: 10px 22px 12px;
   background: rgba(0,0,0,0.28);
   border-top: 1px solid rgba(255,255,255,0.08);
   text-align: left;
@@ -2604,37 +2604,37 @@ footer {
 
 .kokoro-taishitsu-band-label {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.28em;
   color: rgba(255,255,255,0.80);
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   padding-left: 0.28em;
 }
 
 .kokoro-taishitsu-band-type {
   font-family: 'Zen Old Mincho', serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
   color: var(--ink);
   letter-spacing: 0.06em;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .kokoro-taishitsu-band-organs {
   display: flex;
-  gap: 6px;
+  gap: 4px;
   flex-wrap: wrap;
 }
 
 .kokoro-organ-pill {
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   color: rgba(255,235,160,0.92);
   background: rgba(220,190,110,0.18);
   border: 1px solid rgba(220,190,110,0.45);
   border-radius: 2px;
-  padding: 4px 10px;
+  padding: 2px 7px;
   letter-spacing: 0.06em;
 }
 
@@ -2750,7 +2750,7 @@ footer {
 }
 .ai-step-title {
   font-family: 'Zen Old Mincho', serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--ink);
   letter-spacing: 0.06em;
@@ -2855,7 +2855,7 @@ footer {
 
 .kokoro-yojo-ja {
   font-family: 'Zen Old Mincho', serif;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.08em;
   color: var(--ink);
@@ -3211,7 +3211,7 @@ footer {
           <div class="section-title-ja">あなたの「本質タイプ」</div>
         </div>
       </div>
-      <div class="section-lead">生まれ持った体質のベースと、頑張りすぎた時に体が教えてくれるサイン。自分の性質を知ることで、心地よい整え方が見えてきます。</div>
+      <div class="section-lead">占いの十干に基づいた10種類の漢方体質タイプのうち、あなたが元々強く持っているメインの体質タイプです。生まれの体質を知ることで、自分に合った正しいご自愛養生を選ぶことができます。</div>
       <div id="kokoro-content"></div>
     </section>
 
@@ -3490,61 +3490,61 @@ function getTenchusatsuGroupLabel(tenchusatsuPair) {
 // ── ① 10タイプ「こころ」（日干） ──
 const KOKORO = {
   '甲': {
-    name: '大木タイプ', en: 'The Great Tree', motif: '大木',
+    name: '大木タイプ', en: 'THE TREE', motif: '大木',
     desc: '天に向かって真っ直ぐに伸びる「大木」の人。正義感が強く、曲がったことが苦手な真っ直ぐな心を持っています。常に自分をアップデートしたいという純粋な向上心があり、一度決めた目標に向かってぐんぐん成長していく力強さと、嘘のない誠実さが魅力です。',
     food: 'レモン・梅干しなど、気分をスッキリさせる酸味とフレッシュな香り。',
     body: '常にフル稼働で頭や目に力が入りやすく、スマホ疲れによるイライラや肩の張り、爪のトラブルが出やすい。'
   },
   '乙': {
-    name: '草花タイプ', en: 'The Wildflower', motif: '草花',
+    name: '草花タイプ', en: 'THE GRASS', motif: '草花',
     desc: '踏まれても立ち上がる、しなやかな「草花」の人。人当たりが柔らかく、周囲との調和を何よりも大切にします。争いごとを好まず一見控えめに見えますが、どんな環境でも粘り強く根を張り、周りをホッと和ませる優しさとブレない芯の強さを秘めています。',
     food: '緑色のサラダや、お芋のホクホク・ふわふわした心が緩む食感。',
     body: '人に気を使いすぎてストレスを抱え込みやすく、気分の落ち込みや、お腹の張り、足のつりが出やすい。'
   },
   '丙': {
-    name: '太陽タイプ', en: 'The Sun', motif: '太陽',
+    name: '太陽タイプ', en: 'THE SUN', motif: '太陽',
     desc: '周りを明るく照らす、エネルギッシュな「太陽」の人。オープンで裏表がなく、自分の好きなことや熱意をストレートに表現します。そこにいるだけでパッと場が華やぎ、言葉や振る舞いで人々に前向きな影響を与えていく、温かくパワフルな魅力があります。',
     food: 'アツアツの肉料理や、見た目が鮮やかな気分が盛り上がる映える食事。',
     body: '熱がこもって顔が赤くなりやすく、動悸や突然の吹き出物、興奮による寝つきの悪さが出やすい。'
   },
   '丁': {
-    name: '灯火タイプ', en: 'The Candle', motif: '灯火',
+    name: '灯火タイプ', en: 'THE FIRE', motif: '灯火',
     desc: '暗闇を優しく照らす「灯火」の人。物静かで穏やかな佇まいの奥に、非常に熱い情熱を秘めています。感受性が豊かで繊細なため、独自の美しい世界観や雰囲気を大切にしており、心に描いた理想を静かに、そして確実に形にしていくロマンチストです。',
     food: '香ばしく焼いたお肉、深い旨味と余韻のあるこだわりの一皿。',
     body: '神経を細やかに使い、心の中に感情を溜め込みすぎて血が不足し、手足の冷えや不安感、立ちくらみ、肌のくすみが出やすい。'
   },
   '戊': {
-    name: '山岳タイプ', en: 'The Mountain', motif: '山岳',
+    name: '山岳タイプ', en: 'THE MOUNTAIN', motif: '山岳',
     desc: 'どっしりとそびえ立つ「山岳」の人。多少のトラブルでは動じない、圧倒的な安定感と包容力を持っています。自分の信念を曲げない頑固な一面もありますが、広い視野と大きな器で周囲の人をすっぽりと包み込み、強固な安心感を与える頼もしい存在です。',
     food: '白米やホクホクしたお芋など、自然な甘味と圧倒的な満足感のある食事。',
     body: '我慢強いため胃腸に熱を溜め込みやすく、ストレスからのドカ食いや食欲の増加、胸焼け、口内炎が出やすい。'
   },
   '己': {
-    name: '大地タイプ', en: 'The Earth', motif: '大地',
+    name: '大地タイプ', en: 'THE EARTH', motif: '大地',
     desc: '万物を豊かに育む、温かな「大地」の人。他者への愛情が深く、身近な人や物事を丁寧に育てることに喜びを感じます。派手なパフォーマンスよりも、地道な努力をコツコツと積み上げることが得意で、まじめで優しい人柄が多くの人から愛されます。',
     food: '甘辛い煮込み料理や、お腹からじんわり満たされるコクのあるこってり料理。',
     body: '自分の思いを我慢して内にためこみやすく、食後の強い眠気や胃もたれ、気分のくよくよが出やすい。'
   },
   '庚': {
-    name: '岩石タイプ', en: 'The Rock', motif: '岩石',
+    name: '岩石タイプ', en: 'THE STONE', motif: '岩石',
     desc: '硬く削り出された「岩石（鉱石）」の人。意志が非常に強く、困難な状況にも果敢に立ち向かうストレートな心を持っています。曖昧なことを嫌い「白黒はっきりさせたい」という潔さがあり、停滞した現状や古いルールを鋭い決断力で鮮やかに変えていきます。',
     food: 'キレのある辛味が効いたもの、ハード系のパンやナッツなど噛みごたえのある食感。',
     body: '常に戦闘モードで体がこわばりやすく、肌のかゆみや鼻づまりなどアレルギーサインが出やすい。'
   },
   '辛': {
-    name: '宝石タイプ', en: 'The Gem', motif: '宝石',
+    name: '宝石タイプ', en: 'THE GEM', motif: '宝石',
     desc: '磨かれることで輝きを放つ、美しい「宝石」の人。繊細で非常に高い美意識を持っており、現状に妥協せず自分自身を磨き続けることに喜びを感じます。本物を見抜く鋭い審美眼で、バラバラな要素から無駄のない洗練されたスタイルを追求していきます。',
     food: 'クリーミーな乳製品やポタージュなど、なめらかな白色の食材。',
     body: '完璧を求めるあまり神経が疲れやすく、肌のデリケートさや呼吸の浅さ、免疫の低下が出やすい。'
   },
   '壬': {
-    name: '海洋タイプ', en: 'The Ocean', motif: '海洋',
+    name: '海洋タイプ', en: 'THE OCEAN', motif: '海洋',
     desc: 'どこまでも広がる、自由な「海洋」の人。大らかで束縛を嫌い、常に新しい世界へ目を向けています。どんな状況や相手にも柔軟に合わせられる器の大きさがあり、既存の枠組みや常識を軽やかに超えて飛び込んでいく、ダイナミックなスケール感の持ち主です。',
     food: 'みずみずしいフレッシュな海鮮やキンキンに冷えたジューシーなドリンク。',
     body: '水分代謝が滞りやすく、下半身の冷えや顔のむくみ、雨の日の関節のだるさが出やすい。'
   },
   '癸': {
-    name: '雨水タイプ', en: 'The Rain', motif: '雨水',
+    name: '雨水タイプ', en: 'THE RAIN', motif: '雨水',
     desc: '乾いたものを静かに潤す「雨水」の人。思慮深く勤勉で、静かに知恵を蓄えていくクリアな心を持っています。人の痛みに寄り添う優しい共感力があり、目立たないところでも周囲に細やかな気配りや潤いを与える、とても優しくて誠実な心の持ち主です。',
     food: '塩分の効いたおつまみや発酵食品など、じんわりと体に浸透する熟成された味わい。',
     body: '思考が内側に向かってエネルギーが枯渇しやすく、手足のほてりや白髪、エイジングサインが出やすい。'
@@ -4579,7 +4579,7 @@ function buildAIPrompt(r) {
 
 【ルール】
 1. 専門用語・数値・影響度の%はそのまま使わず、ライフスタイル誌のような日常語に翻訳し、データに基づいた具体的な言葉で伝えてください。AI特有の定型フレーズは使わないでください。
-2. 「取り入れる」「試す」「整える」など前向きに動ける言葉を選び、「休む」「何もしない」「自分を許す」は避けてください。
+2. ポジティブで前向きに動ける言葉を選び、「地獄におちる」「何もしない」「自分を許す」などネガティブな言葉は避けてください。
 3. 区切りごとに空白行を入れ、スマホで読みやすく。
 4. これは医療診断ではありません。心や体に強い不調がある場合は医療機関へのご相談をお勧めします。
 5. 最後に必ず「より詳しい個別の養生法は、おちゃぱんさんへのLINE相談や漢方占いカウンセリングでお調べいただけます」と案内してください。`;
