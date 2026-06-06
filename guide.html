@@ -111,7 +111,7 @@ a { color: inherit; text-decoration: none; }
 .guide-page-en {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 0.22em;
   color: var(--gold-bright);
   margin-bottom: 8px;
@@ -119,7 +119,7 @@ a { color: inherit; text-decoration: none; }
 }
 .guide-page-ja {
   font-family: 'Zen Old Mincho', serif;
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 500;
   letter-spacing: 0.1em;
   color: var(--ink);
@@ -132,7 +132,7 @@ a { color: inherit; text-decoration: none; }
 }
 .guide-section-title {
   font-family: 'Zen Old Mincho', serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.1em;
   color: var(--gold);
@@ -146,7 +146,7 @@ a { color: inherit; text-decoration: none; }
   background: var(--paper);
   border: 1.5px solid var(--card-border);
   border-radius: 3px;
-  padding: 22px;
+  padding: 14px 22px 22px;
   margin-bottom: 14px;
   box-shadow: var(--shadow-md);
 }
@@ -159,63 +159,97 @@ a { color: inherit; text-decoration: none; }
 }
 .guide-step-item {
   display: flex;
-  gap: 14px;
-  padding: 14px 0;
+  gap: 16px;
+  padding: 10px 0;
   border-bottom: 1px solid var(--hairline);
   align-items: flex-start;
 }
-.guide-step-item:last-child { border-bottom: none; }
+.guide-step-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
 .guide-step-num {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 300;
   color: var(--gold);
   line-height: 1;
-  min-width: 28px;
+  min-width: 30px;
   padding-top: 2px;
   flex-shrink: 0;
 }
-.guide-step-text {
+.guide-step-body {
+  flex: 1;
+}
+.guide-step-title {
+  font-family: 'Zen Old Mincho', serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--gold);
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+.guide-step-desc {
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.8;
-  color: var(--ink);
+  color: var(--ink-2);
 }
 
 /* ── 質問例 ── */
 .guide-questions {
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.8;
   color: var(--ink-2);
   margin-bottom: 14px;
 }
-.guide-question-list {
-  list-style: none;
+/* ── 質問カード ── */
+.guide-question-cards {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
-.guide-question-item {
+
+.guide-question-card {
   background: var(--tile);
   border: 1px solid var(--hairline);
   border-left: 3px solid var(--gold);
   border-radius: 2px;
-  padding: 12px 14px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
+  padding: 16px 14px 14px;
 }
-.guide-question-text {
+
+.guide-question-card-label {
   font-family: 'Zen Old Mincho', serif;
-  font-size: 12.5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.guide-question-card-desc {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 13px;
+  line-height: 1.85;
+  color: var(--ink-3);
+  margin-bottom: 12px;
+}
+
+.guide-question-card-prompt {
+  font-family: 'Zen Old Mincho', serif;
+  font-size: 13px;
   line-height: 1.75;
   color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--hairline);
+  border-radius: 2px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
 }
 .guide-question-copy {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.08em;
   color: var(--gold);
   background: transparent;
@@ -246,7 +280,7 @@ a { color: inherit; text-decoration: none; }
 .guide-care-label {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.18em;
   color: var(--gold);
   opacity: 0.75;
@@ -254,14 +288,14 @@ a { color: inherit; text-decoration: none; }
 }
 .guide-care-title {
   font-family: 'Zen Old Mincho', serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--ink);
   margin-bottom: 8px;
 }
 .guide-care-desc {
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
-  font-size: 12.5px;
+  font-size: 13px;
   line-height: 1.8;
   color: var(--ink-2);
   margin-bottom: 12px;
@@ -274,7 +308,7 @@ a { color: inherit; text-decoration: none; }
   padding: 13px 16px;
   border-radius: 2px;
   font-family: 'Zen Old Mincho', serif;
-  font-size: 12.5px;
+  font-size: 13px;
   letter-spacing: 0.1em;
   transition: opacity 0.2s;
   margin-bottom: 20px;
@@ -311,7 +345,7 @@ a { color: inherit; text-decoration: none; }
 }
 .guide-note-text {
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.85;
   color: var(--ink-3);
 }
@@ -349,7 +383,7 @@ a { color: inherit; text-decoration: none; }
   <!-- ページタイトル -->
   <div class="guide-page-title">
     <span class="guide-page-en">AI Guide</span>
-    <div class="guide-page-ja">自分をもっと好きになる<br>「ご自愛メッセンジャー」の使い方</div>
+    <div class="guide-page-ja">自分をもっと好きになる<br>「AIご自愛メッセンジャー」の使い方</div>
   </div>
 
   <!-- AI鑑定の流れ -->
@@ -359,19 +393,31 @@ a { color: inherit; text-decoration: none; }
       <div class="guide-steps">
         <div class="guide-step-item">
           <span class="guide-step-num">01</span>
-          <div class="guide-step-text">占い結果画面の一番下にある「AIに送るテキストをコピー」ボタンをタップします。</div>
+          <div class="guide-step-body">
+            <div class="guide-step-title">テキストをコピーする</div>
+            <div class="guide-step-desc">占い結果画面の「AIに送るテキストをコピー」ボタンをタップすると、あなた専用のデータが自動でコピーされます。</div>
+          </div>
         </div>
         <div class="guide-step-item">
           <span class="guide-step-num">02</span>
-          <div class="guide-step-text">コピーできたら、ChatGPTやGeminiなど、普段お使いのAIアプリを立ち上げてみてください。</div>
+          <div class="guide-step-body">
+            <div class="guide-step-title">AIアプリを開く</div>
+            <div class="guide-step-desc">ChatGPT・Geminiなど、普段お使いのAIアプリを立ち上げてください。</div>
+          </div>
         </div>
         <div class="guide-step-item">
           <span class="guide-step-num">03</span>
-          <div class="guide-step-text">メッセージ入力欄を長押しして、コピーしたデータをそのまま「貼り付け（ペースト）」します。</div>
+          <div class="guide-step-body">
+            <div class="guide-step-title">貼り付けて送信する</div>
+            <div class="guide-step-desc">メッセージ入力欄を長押しして「貼り付け（ペースト）」し、そのまま送信します。</div>
+          </div>
         </div>
         <div class="guide-step-item">
           <span class="guide-step-num">04</span>
-          <div class="guide-step-text">そのまま送信ボタンを押すと、AIがあなたの性質を読み解き、心がじんわり温まるようなパーソナル鑑定を届けてくれます。</div>
+          <div class="guide-step-body">
+            <div class="guide-step-title">AIが鑑定してくれます</div>
+            <div class="guide-step-desc">あなたの性質を読み解いた、パーソナルなメッセージが届きます。</div>
+          </div>
         </div>
       </div>
     </div>
@@ -381,28 +427,45 @@ a { color: inherit; text-decoration: none; }
   <div class="guide-section">
     <div class="guide-section-title">付け加えるといい質問の例（5選）</div>
     <p class="guide-questions">コピーしたデータを貼り付けた後、そのすぐ下に改行して以下の質問を1つ付け加えて送信してみてください。ご家族やパートナー、ご友人や気になる方の体質もお調べいただけます。</p>
-    <ul class="guide-question-list">
-      <li class="guide-question-item">
-        <span class="guide-question-text">「私が生まれ持っている『本来の強み』と、それを日常で活かすためのヒントを教えてください。」</span>
-        <button class="guide-question-copy" data-text="「私が生まれ持っている『本来の強み』と、それを日常で活かすためのヒントを教えてください。」">コピー</button>
-      </li>
-      <li class="guide-question-item">
-        <span class="guide-question-text">「私が無意識に無理をしてしまうポイントと、自分を優しく休ませるためのコツを教えてください。」</span>
-        <button class="guide-question-copy" data-text="「私が無意識に無理をしてしまうポイントと、自分を優しく休ませるためのコツを教えてください。」">コピー</button>
-      </li>
-      <li class="guide-question-item">
-        <span class="guide-question-text">「私の性質が最も自然に輝くのは、どのような環境や状況にいるときですか？」</span>
-        <button class="guide-question-copy" data-text="「私の性質が最も自然に輝くのは、どのような環境や状況にいるときですか？」">コピー</button>
-      </li>
-      <li class="guide-question-item">
-        <span class="guide-question-text">「今の私に合った、心がホッとする『夜の過ごし方』のルーティンを提案してください。」</span>
-        <button class="guide-question-copy" data-text="「今の私に合った、心がホッとする『夜の過ごし方』のルーティンを提案してください。」">コピー</button>
-      </li>
-      <li class="guide-question-item">
-        <span class="guide-question-text">「このデータの方の体質と、生まれ持った性質について詳しく教えてください。」</span>
-        <button class="guide-question-copy" data-text="「このデータの方の体質と、生まれ持った性質について詳しく教えてください。」">コピー</button>
-      </li>
-    </ul>
+
+    <div class="guide-question-cards">
+
+      <div class="guide-question-card">
+        <div class="guide-question-card-label">本来の強みの活かし方を知りたい</div>
+        <p class="guide-question-card-desc">生まれ持った性質から、あなたが自然に得意なことや、周りから頼られやすいポイントを教えてくれます。自分では当たり前すぎて気づいていない才能が見つかることも。</p>
+        <div class="guide-question-card-prompt">「私の本来の強みと、それを日常で活かすためのヒントを教えてください。」</div>
+        <button class="guide-question-copy" data-text="「私の本来の強みと、それを日常で活かすためのヒントを教えてください。」">コピー</button>
+      </div>
+
+      <div class="guide-question-card">
+        <div class="guide-question-card-label">やりがちな考え方と行動パターンを知りたい</div>
+        <p class="guide-question-card-desc">自分では気づきにくい、無意識に繰り返しがちな思考の癖や行動の傾向を教えてくれます。「なぜいつもこうなるんだろう」という疑問に、生まれの性質から答えをくれます。</p>
+        <div class="guide-question-card-prompt">「私がやりがちな考え方と行動パターンを教えてください。」</div>
+        <button class="guide-question-copy" data-text="「私がやりがちな考え方と行動パターンを教えてください。」">コピー</button>
+      </div>
+
+      <div class="guide-question-card">
+        <div class="guide-question-card-label">自分の体質が出やすい環境や状況を知りたい</div>
+        <p class="guide-question-card-desc">疲れやすい、調子が崩れやすいのはどんな時か、体質の視点から具体的に教えてくれます。季節・天気・人間関係・生活リズムなど、自分に影響しやすい要因が分かります。</p>
+        <div class="guide-question-card-prompt">「私の体質が出やすい環境や状況を教えてください。」</div>
+        <button class="guide-question-copy" data-text="「私の体質が出やすい環境や状況を教えてください。」">コピー</button>
+      </div>
+
+      <div class="guide-question-card">
+        <div class="guide-question-card-label">パフォーマンスが上がる過ごし方を知りたい</div>
+        <p class="guide-question-card-desc">自分の性質に合った、エネルギーが満ちて調子の良い状態をキープするための日常の工夫を教えてくれます。食事・睡眠・仕事のリズムなど、自分らしい整え方のヒントになります。</p>
+        <div class="guide-question-card-prompt">「私のパフォーマンスが上がる過ごし方を教えてください。」</div>
+        <button class="guide-question-copy" data-text="「私のパフォーマンスが上がる過ごし方を教えてください。」">コピー</button>
+      </div>
+
+      <div class="guide-question-card">
+        <div class="guide-question-card-label">気になる人との接し方を知りたい</div>
+        <p class="guide-question-card-desc">気になる方の生年月日でデータを作り、自分のプロンプトの後に続けて送ります。相手の体質や性質を踏まえた上で、お互いの関わり方や心地よい距離感のヒントを教えてくれます。自分のプロンプトをAIに送った後、続けて気になる方のプロンプトを貼り付け、この質問を添えて送ってください。</p>
+        <div class="guide-question-card-prompt">「このデータの方と私がうまくいく接し方や、お互いの心地よい関わり方を教えてください。」</div>
+        <button class="guide-question-copy" data-text="「このデータの方と私がうまくいく接し方や、お互いの心地よい関わり方を教えてください。」">コピー</button>
+      </div>
+
+    </div>
   </div>
 
   <!-- 3つのご自愛ステップ -->
