@@ -2610,7 +2610,7 @@ footer {
 /* ── ヒーロー内：体質タイプ帯 ── */
 .kokoro-taishitsu-band {
   margin: 18px -22px -22px;
-  padding: 10px 22px 14px;
+  padding: 10px 22px 20px;
   background: rgba(0,0,0,0.28);
   border-top: 1px solid rgba(255,255,255,0.08);
   text-align: left;
@@ -4542,7 +4542,7 @@ function buildAIPrompt(r) {
   });
 
   // 命式
-  const meishiki = `日柱 ${r.pillars.day.kan}${r.pillars.day.shi} / 月柱 ${r.pillars.month.kan}${r.pillars.month.shi} / 年柱 ${r.pillars.year.kan}${r.pillars.year.shi}`;
+  const meishiki = `日柱 ${r.pillars.day.kan}${r.pillars.day.shi}（本質/自分自身）/ 月柱 ${r.pillars.month.kan}${r.pillars.month.shi}（生活/プライベート）/ 年柱 ${r.pillars.year.kan}${r.pillars.year.shi}（社会/仕事）`;
 
   // 個性キャラ
   const kanshi = `${r.kanshi.no} ${r.kanshi.k}（${r.kanshi.name}）`;
