@@ -856,6 +856,240 @@ input, button, textarea, select {
   padding-bottom: 18px;
   padding-top: 4px;
 }
+.section-lead strong {
+  color: var(--gold-bright);
+  font-weight: 600;
+}
+.exit-note {
+  font-family: 'Zen Old Mincho', serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.9;
+  text-align: center;
+  margin: 20px 0 0;
+}
+.ai-handoff {
+  margin: 56px auto 48px;
+  max-width: 600px;
+  padding: 0 20px;
+  text-align: center;
+}
+.ai-handoff-lead {
+  font-family: 'Zen Old Mincho', serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.9;
+  margin: 0 0 22px;
+}
+.ai-handoff-lead strong {
+  color: var(--gold-bright);
+  font-weight: 600;
+}
+.ai-handoff-body {
+  font-family: 'Zen Old Mincho', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--ink-2);
+  line-height: 2.05;
+  margin: 0 0 22px;
+}
+.ai-handoff-close {
+  font-family: 'Zen Old Mincho', serif;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 2.0;
+  margin: 0;
+}
+.mini-flow {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.7;
+  text-align: center;
+  margin: 0 0 16px;
+  padding: 10px 8px;
+  background: rgba(122,144,128,0.08);
+  border-radius: 4px;
+}
+.card-empathy {
+  font-family: 'Zen Old Mincho', serif;
+  font-size: 13.5px;
+  color: var(--ink-2);
+  line-height: 1.95;
+  text-align: left;
+  margin: 0 0 14px;
+}
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+  text-align: left;
+}
+.card-list li {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 13px;
+  color: var(--ink);
+  line-height: 1.7;
+  padding: 0 0 0 20px;
+  margin: 0 0 7px;
+  position: relative;
+}
+.card-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--teal);
+  font-size: 12px;
+  top: 1px;
+}
+.card-change {
+  font-family: 'Zen Old Mincho', serif;
+  font-size: 13.5px;
+  color: var(--ink);
+  line-height: 1.95;
+  text-align: left;
+  margin: 0 0 16px;
+  padding: 13px 15px;
+  background: linear-gradient(135deg, rgba(58,173,164,0.10), rgba(232,200,112,0.10));
+  border-radius: 6px;
+}
+.card-change-label {
+  display: block;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--teal-deep);
+  margin: 0 0 6px;
+}
+.card-price {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 13px;
+  color: var(--muted);
+  text-align: center;
+  margin: 0 0 14px;
+  line-height: 1.7;
+}
+.card-price strong {
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 600;
+}
+.card-flow {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.9;
+  text-align: center;
+  margin: 0 0 14px;
+  padding: 11px 12px;
+  background: rgba(122,144,128,0.07);
+  border-radius: 6px;
+}
+.flow-num {
+  list-style: none;
+  counter-reset: step;
+  padding: 0;
+  margin: 0 0 16px;
+  text-align: left;
+}
+.flow-num li {
+  counter-increment: step;
+  position: relative;
+  padding: 0 0 0 40px;
+  margin: 0 0 13px;
+  min-height: 28px;
+}
+.flow-num li:last-child { margin-bottom: 0; }
+.flow-num li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  background: var(--teal);
+  color: #fff;
+  border-radius: 50%;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flow-num li b {
+  display: block;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.5;
+}
+.flow-num li span {
+  display: block;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-top: 1px;
+}
+/* カード内の小見出し（メニュー感） */
+.card-subhead {
+  display: block;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  text-align: left;
+  margin: 0 0 8px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--hairline);
+}
+/* 具体的な手順ステップ */
+.flow-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  text-align: left;
+}
+.flow-steps li {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 12.5px;
+  color: var(--ink);
+  line-height: 1.65;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+  position: relative;
+}
+.flow-steps li:last-child { margin-bottom: 0; }
+.flow-steps li .step-num {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 21px;
+  height: 21px;
+  background: var(--teal);
+  color: var(--paper);
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+}
+.flow-steps li .step-sub {
+  display: block;
+  font-size: 11.5px;
+  color: var(--muted);
+  line-height: 1.55;
+  margin-top: 2px;
+}
 
 /* ========================================
    ① こころのタイプ
@@ -2147,6 +2381,19 @@ input, button, textarea, select {
   line-height: 1.5;
   padding-left: 0.08em;
 }
+.format-badge {
+  display: inline-block;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--teal-deep);
+  background: rgba(58,173,164,0.12);
+  border: 1px solid rgba(58,173,164,0.35);
+  border-radius: 100px;
+  padding: 3px 12px;
+  margin-bottom: 10px;
+}
 
 .counseling-desc {
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
@@ -2192,6 +2439,51 @@ input, button, textarea, select {
 .counseling-btn:hover::after {
   transform: translateX(4px);
   background: var(--teal-deep);
+}
+
+/* 出口の主CTA（押したくなる塗りボタン・LINE用） */
+.cta-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 20px;
+  margin-top: 4px;
+  background: var(--teal);
+  color: var(--paper);
+  text-decoration: none;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 4px;
+  box-shadow: 0 4px 14px rgba(58,173,164,0.28);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+.cta-primary:hover {
+  background: var(--teal-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(58,173,164,0.38);
+}
+.cta-primary:active {
+  transform: translateY(0);
+}
+/* 出口の副CTA（急ぐ人用・STORES直リンク・控えめ） */
+.cta-secondary {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--muted);
+  font-family: 'Zen Old Mincho', serif;
+  font-size: 12.5px;
+  line-height: 1.7;
+  text-decoration: none;
+}
+.cta-secondary a {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 /* ========================================
@@ -3301,43 +3593,120 @@ footer {
       </div>
     </section>
 
-    <!-- ⑤ 体調予報（AIの後に移動） -->
-    <section class="section" id="sec-forecast">
-      <div class="section-header">
-        <div class="section-titles">
-          <div class="section-title-en">12-Month Forecast</div>
-          <div class="section-title-ja">あなたの「体調予報」</div>
-        </div>
-      </div>
-      <div class="section-lead">体調にも、季節のような自然なリズムがあります。12ヶ月の中で、少し意識してご自愛を優先してほしい月だけをピックアップしました。</div>
-      <div class="forecast-legend">
-        <span class="forecast-legend-item"><span class="forecast-legend-badge level-3">★★★</span>かなり注意</span>
-        <span class="forecast-legend-item"><span class="forecast-legend-badge level-2">★★</span>注意</span>
-        <span class="forecast-legend-item"><span class="forecast-legend-badge level-1">★</span>やや注意</span>
-        <span class="forecast-legend-item"><span class="forecast-legend-badge level-ten">⚠️</span>急変注意</span>
-      </div>
-      <div id="forecast-content"></div>
-    </section>
+    <div class="ai-handoff">
+      <p class="ai-handoff-lead">AIがお伝えできるのは、<br><strong>生まれ持った体質の読み解き</strong>まで。</p>
+      <p class="ai-handoff-body">実際にどう整えるとよいかは、<br>今のあなたの体調や状況、運気の流れまで<br>掛け合わせて、はじめて見えてきます。</p>
+      <p class="ai-handoff-close">自分に合った整え方を知りたい方は、<br>漢方占い鑑定士にご相談ください。</p>
+    </div>
 
     <section class="section" id="sec-counseling">
       <div class="section-header">
         <div class="section-titles">
-          <div class="section-title-en">Personal Consultation</div>
-          <div class="section-title-ja">専門家と作る、あなただけの「からだカルテ」</div>
+          <div class="section-title-en">Your Next Step</div>
+          <div class="section-title-ja">あなたの「次の一歩」</div>
         </div>
       </div>
-      <div class="section-lead">生年月日から分かるのは、あなたが生まれ持った性質のベース。今の体調と運気の流れを重ねることで、あなただけの養生が見えてきます。</div>
+      <div class="section-lead">まずLINEで気軽に相談したい方、じっくり深く見てほしい方、自分で学びたい方へ。<br>下のメニューから、あなたに合うものをお選びください。</div>
+
+      <div class="counseling-card" style="margin-bottom:18px;">
+        <span class="counseling-label">今の不調を、まず軽くしたい</span>
+        <h3 class="counseling-title">LINEミニご自愛鑑定</h3>
+        <span class="format-badge">LINE・テキスト</span>
+        <p class="card-empathy">
+          頭痛、冷え、疲れ、肌あれ、気分の浮き沈み。「病院に行くほどじゃない」けれど、毎日のどこかで気になっている。今いちばん気がかりなことを、ひと言聞かせてください。
+        </p>
+        <ul class="card-list">
+          <li>なぜ今、あなたにその不調が起きているのか</li>
+          <li>この季節に、何を心がければ楽になるか</li>
+          <li>あなたの体質に合う、漢方茶のご提案</li>
+        </ul>
+        <p class="card-change">
+          <span class="card-change-label">— 受けたあとの変化 —</span>
+          不調の理由が分かって「わたしのせいじゃなかった」とほっとする。自分に合うものを迷わず選べて、季節の変わり目も元気に乗りきれるように。
+        </p>
+        <span class="card-subhead">お申し込みの流れ</span>
+        <ol class="flow-num">
+          <li><b>LINEで申し込む</b><span>ボタンを押して、ご案内に沿ってお手続き（5,000円）</span></li>
+          <li><b>お悩みをひと言送る</b><span>気がかりな不調と、鑑定ツールの結果を送るだけ</span></li>
+          <li><b>読み解きが届く</b><span>数日で、あなた専用のお返事が届きます</span></li>
+        </ol>
+        <p class="card-price">
+          <strong>5,000円</strong>／LINEでお届け
+        </p>
+        <a href="https://lin.ee/jHsoTMi" target="_blank" rel="noopener" class="cta-primary cta-liff" data-liff-msg="【ミニ鑑定】今の不調をひとつ、読み解いてほしいです。">
+          LINEでご案内を受け取る
+        </a>
+        <p class="cta-secondary">
+          すぐ申し込む方は <a href="https://kampotakeru.stores.jp/items/MINI_KANTEI_ID" target="_blank" rel="noopener">こちら</a>
+        </p>
+      </div>
+
+      <div class="counseling-card" style="margin-bottom:18px;">
+        <span class="counseling-label">不調の根本から、私に合う方法を知りたい</span>
+        <h3 class="counseling-title">漢方占いカウンセリング</h3>
+        <span class="format-badge">オンライン・90分</span>
+        <p class="card-empathy">
+          ひとつ整えても、また別の不調が出てくる。検査では異常なし、でも確かに調子が悪い。続けている健康法が、本当に自分に合っているのか分からない。その堂々めぐりを、90分でほどいていきます。
+        </p>
+        <ul class="card-list">
+          <li>いくつもの不調が、どこでつながっているのか</li>
+          <li>あなたに本当に合うもの、合わないもの</li>
+          <li>体質と運気から見る、力を発揮しやすい時期</li>
+          <li>あなただけの、これからの養生の道すじ</li>
+          <li>ご家族やパートナーの体質も（ご希望の方）</li>
+        </ul>
+        <p class="card-change">
+          <span class="card-change-label">— 受けたあとの変化 —</span>
+          長年の不調の理由が分かって、心がすっと軽くなる。調子のいい時期が読めるから、やりたいことに思いきり動けて、毎日に手応えが生まれます。
+        </p>
+        <span class="card-subhead">お申し込みの流れ</span>
+        <ol class="flow-num">
+          <li><b>LINEからお申し込み</b><span>お申し込み方法をご案内します</span></li>
+          <li><b>アンケートに回答</b><span>お悩みや生年月日などをフォームでお送りください</span></li>
+          <li><b>日時を予約</b><span>ご希望の日時をお選びいただけます</span></li>
+          <li><b>当日90分のセッション</b><span>オンライン・顔出しなしも可。後日カルテとお茶もお届け</span></li>
+        </ol>
+        <p class="card-price">
+          <strong>19,800円</strong>／90分・オンライン<br>
+          体質カルテ（PDF）＋季節の漢方茶7包付き・毎月5名様限定
+        </p>
+        <a href="https://lin.ee/jHsoTMi" target="_blank" rel="noopener" class="cta-primary cta-liff" data-liff-msg="【漢方占いカウンセリング】不調の根本から、私に合う方法を知りたいです。">
+          LINEでご案内を受け取る
+        </a>
+        <p class="cta-secondary">
+          すぐ予約する方は <a href="https://kampotakeru.stores.jp/items/68cf09b7925366bd7c36baf0" target="_blank" rel="noopener">こちら</a>
+        </p>
+      </div>
 
       <div class="counseling-card">
-        <span class="counseling-label">Counseling</span>
-        <h3 class="counseling-title">からだカルテ個別鑑定</h3>
-        <p class="counseling-desc">
-          最近なんとなく疲れやすい、肌や胃腸が気になる、気力が落ちている。そんな今の状態を教えてください。漢方と占いを掛け合わせた唯一の視点から、不調の原因、今まで知らなかった自分に合うもの、そして崩れやすい時期の対策まで、オンラインで個別にお伝えします。
+        <span class="counseling-label">自分で読めるようになりたい・仕事にしたい</span>
+        <h3 class="counseling-title">漢方占い講座</h3>
+        <span class="format-badge">次回募集・先行案内</span>
+        <p class="card-empathy">
+          鑑定を受けるだけでなく、自分の手で読み解けるようになりたい。家族や大切な人の体質を理解して、支えてあげたい。いつか、これを仕事にしたい。そんな思いのある方へ。
         </p>
-        <a href="https://kampotakeru.stores.jp/items/68cf09b7925366bd7c36baf0" target="_blank" rel="noopener" class="counseling-btn">
-          詳しく見る ／ ご予約
+        <ul class="card-list">
+          <li>占いと漢方を掛け合わせた、読み解きの基礎</li>
+          <li>自分や身近な人の体質を見立てる力</li>
+          <li>学んだことを、暮らしや仕事に活かす道すじ</li>
+        </ul>
+        <p class="card-change">
+          <span class="card-change-label">— 学んだあとの変化 —</span>
+          自分で読めるようになると、不調に振り回されず、自分と大切な人を整えていける。一生ものの力になります。
+        </p>
+        <span class="card-subhead">ご案内の流れ</span>
+        <ol class="flow-num">
+          <li><b>先行案内を希望する</b><span>LINEでひとこと送るだけ</span></li>
+          <li><b>募集開始でいちばんにご案内</b><span>それまで季節の養生もお届け</span></li>
+        </ol>
+        <a href="https://lin.ee/jHsoTMi" target="_blank" rel="noopener" class="cta-primary cta-liff" data-liff-msg="【講座】漢方占い講座の先行案内を希望します。">
+          LINEでご案内を受け取る
         </a>
       </div>
+
+      <p class="exit-note">
+        どれが合うか迷ったら、まずはLINEで。あなたの今に合う道を、一緒に見つけます。
+      </p>
     </section>
 
     <footer>
@@ -4307,8 +4676,6 @@ function render(r) {
   renderKokoro(r);
   // ② 本質キャラ
   renderKanshi(r);
-  // ⑤ 体調予報
-  renderForecast(r);
   // ⑥ AI鑑定プロンプトの表示（途中までを見せて、残りを「続きを読む」で展開）
   renderAIPrompt(r);
 }
@@ -4594,33 +4961,63 @@ function buildAIPrompt(r) {
     : 'なし';
 
   // 体質文字列作成ヘルパー
-  const formatTaishitsu = (tArray) => {
-    if (!tArray || tArray.length === 0) return 'なし';
-    return tArray.map(t => {
-      const signs = t.jiaiCare?.signs_list || [];
-      const signsStr = signs.length > 0 ? `\n  お疲れサイン：${signs.join(' / ')}` : '';
-      return `${t.type}（影響度${influence[t.kan]}%：${(t.organSign || '').replace(/・/g, '、')}）${signsStr}`;
-    }).join('\n');
+  // 合う食材の「方向性キーワード」（干ベース）。具体的な食材名・摂り方は鑑定に残すため、ここでは方向性のみ。
+  const FOOD_DIRECTION = {
+    '甲': '酸味・香り',
+    '乙': '緑色・色の濃いもの',
+    '丙': '苦味・清熱',
+    '丁': '赤色・たんぱく質',
+    '戊': '自然な甘味・食物繊維',
+    '己': '黄色・補気',
+    '庚': '辛味・潤い',
+    '辛': '白色・油分',
+    '壬': '塩味・利水',
+    '癸': '黒色・滋養',
   };
 
-  const mainSigns = r.taishitsu.main.jiaiCare?.signs_list || [];
-  const mainSignsStr = mainSigns.length > 0 ? `\n  お疲れサイン：${mainSigns.join(' / ')}` : '';
-  const mainTaishitsu = `${r.taishitsu.main.type}（影響度${influence[r.pillars.day.kan]}%：${(r.taishitsu.main.organSign || '').replace(/・/g, '、')}）${mainSignsStr}`;
+  // データを#記号ラベル形式に組み立て（ぱっと見で読みにくく。AI認識は末尾の凡例で担保）
+  // サブ体質：影響度0%は除外。1行ずつ ◆タイプ|証|SG:お疲れサイン|FD:食材方向性
+  const lineSub = (tArray) => {
+    if (!tArray) return '';
+    const items = tArray.filter(t => (influence[t.kan] || 0) > 0);
+    if (items.length === 0) return 'なし';
+    return items.map(t => {
+      const sho = (t.organSign || '').replace(/・/g, ',');
+      const sign = (t.jiaiCare?.signs_list || []).join('/');
+      const fd = FOOD_DIRECTION[t.kan] || '';
+      return `◆${t.type}|${influence[t.kan]}|${sho}|SG:${sign}|FD:${fd}`;
+    }).join('\n      ');
+  };
+  // 隠れ体質：お疲れサインは付けない（さりげなく）。証・食材は付ける（誤推測防止）
+  const lineHidden = (tArray) => {
+    if (!tArray) return '';
+    return tArray.map(t => {
+      const sho = (t.organSign || '').replace(/・/g, ',');
+      const fd = FOOD_DIRECTION[t.kan] || '';
+      return `${t.type}|${sho}|FD:${fd}`;
+    }).join(' / ');
+  };
 
-  return `以下の東洋医学（漢方・中医学・算命学）のパーソナルデータを基に、今の私に必要な「ご自愛」のメッセージを届けてください。
+  const mainSho = (r.taishitsu.main.organSign || '').replace(/・/g, ',');
+  const mainSign = (r.taishitsu.main.jiaiCare?.signs_list || []).join('/');
+  const mainFd = FOOD_DIRECTION[r.pillars.day.kan] || '';
+  const goLine = `木${elemCount['木']}/火${elemCount['火']}/土${elemCount['土']}/金${elemCount['金']}/水${elemCount['水']}`;
+  const bdLine = badges === 'なし' ? 'なし' : badges;
 
-あなたは、私を優しく肯定し、自分をもっと好きになるための気づきをくれる「AIご自愛メッセンジャー」です。
+  return `以下のパーソナルデータを基に、今の私に必要な「ご自愛」のメッセージを届けてください。
+
+あなたは、私を優しく肯定し、自分をもっと好きになるための気づきをくれる「AIご自愛メッセンジャー」です。データは記号で表記しています。末尾の【データの読み方】に従って読み解いてください。
 
 【私のパーソナルデータ】
-・命式：${meishiki}
-・個性キャラ：${kanshi}
-・天中殺：${tenchu}
-・特別バッジ：${badges}
-・本質タイプ：${r.kokoro.kan}（${r.kokoro.name}）
-・五行エネルギーバランス：${elemLine}
-・メイン体質（よく出やすい）：${mainTaishitsu}
-・サブ体質（たまに出やすい）：${formatTaishitsu(r.taishitsu.sub)}
-・隠れ体質（症状として出にくく本人も気づいていないことが多い。メインやサブの不調を説明する際に、その背景にある可能性の一つとして、断定せずさりげなく触れてください）：${formatTaishitsu(r.taishitsu.hidden)}
+#MS 日:${r.pillars.day.kan}${r.pillars.day.shi}（本質/自分）/月:${r.pillars.month.kan}${r.pillars.month.shi}（生活/プライベート）/年:${r.pillars.year.kan}${r.pillars.year.shi}（社会/仕事）
+#CH ${kanshi}
+#TC ${tenchu}
+#BD ${bdLine}
+#HT ${r.kokoro.kan}（${r.kokoro.name}）
+#GG ${goLine}
+#P1 ${r.taishitsu.main.type}|${influence[r.pillars.day.kan]}|${mainSho}|SG:${mainSign}|FD:${mainFd}
+#P2 ${lineSub(r.taishitsu.sub)}
+#P3 ${lineHidden(r.taishitsu.hidden)}
 
 【出力】データを読み解き、以下の5つを順番に会話口調で伝えてください。
 1. 生まれ持つ個性（本来の魅力や強み）
@@ -4631,11 +5028,16 @@ function buildAIPrompt(r) {
 
 【ルール】
 1. 命式・五行バランス・体質データを根拠に、複数の情報を組み合わせてその人だけに当てはまる内容を伝えてください。
-2. アドバイスは必ずこのデータの体質・五行に紐づけて具体的に。白湯・スマホ断ち・瞑想など誰にでも当てはまる一般的なものは避けてください。
-3. 算命学用語（建禄・帝旺・魁罡・異常干支など）・影響度の数値（%）は出力に使わず、日常語に置き換えてください。体質タイプ名（肺虚・ひりひりタイプなど）はそのまま使用可ですが、専門的な説明は一般の方にも分かる言葉で伝えてください。
+2. アドバイスは必ずこのデータの体質・五行に紐づけて具体的に。白湯・スマホ断ち・瞑想など誰にでも当てはまる一般的なものは避けてください。合う食材の方向性（FD）には触れてよく、スーパーで買える身近な食材を例に挙げてください。漢方薬や詳しい養生法は伝えず、相談に残してください。
+3. 算命学用語（建禄・帝旺・魁罡・異常干支など）・影響度の数値・五行の数値や記号は出力に使わず、日常語に置き換えてください。体質タイプ名（肺虚・ひりひりタイプなど）はそのまま使用可ですが、専門的な説明は一般の方にも分かる言葉で伝えてください。
 4. 運命・運気・時期の吉凶予測ではなく、体質や性質から導かれるご自愛の視点で伝えてください。
-5. 「取り入れる」「整える」「試してみる」「意識する」など前向きに動ける言葉で伝えてください。「よく休む」「何もしない」「頑張りすぎない」のような受け身・消極的な表現は避けてください。
-6. 末尾に必ず「これは医療診断ではありません。心や体に強い不調がある場合は医療機関へのご相談をお勧めします」と「より詳しい個別の養生法は、おちゃぱんさんへのLINE相談や漢方占いカウンセリングでお調べいただけます」を添えてください。`;
+5. 「取り入れる」「整える」「試してみる」「意識する」など前向きに動ける言葉で伝えてください。「よく休む」「何もしない」「自分を許す」のような受け身・消極的な表現は避けてください。
+6. 末尾に必ず「これは医療診断ではありません。心や体に強い不調がある場合は医療機関へのご相談をお勧めします」と「より詳しい個別の養生法は、おちゃぱんさんへのLINE相談や漢方占いカウンセリングでお調べいただけます」を添えてください。
+
+【データの読み方】
+#MS=命式(日柱/月柱/年柱) #CH=個性キャラ #TC=天中殺 #BD=特別バッジ #HT=本質タイプ #GG=五行バランス(木/火/土/金/水)
+#P1=メイン体質(よく出やすい) #P2=サブ体質(たまに出やすい) #P3=隠れ体質(五行に出ず元々弱いため気づきにくい。不調の隠れた原因の可能性として、メインやサブを説明する中で断定せずさりげなく触れる)
+各体質の見方： タイプ名|影響度|証(専門用語・出力では日常語に)|SG:お疲れサイン|FD:合う食材の方向性`;
 }
 
 /* =========================================================
@@ -4847,5 +5249,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </script>
 
+<script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+<script>
+(function () {
+  // ▼▼▼ LIFF発行後、ここにあなたのLIFF IDを入れてください ▼▼▼
+  var LIFF_ID = "2010393693-n4f79Rks";
+  // ▲▲▲ 例: "1234567890-abcdefgh" ▲▲▲
+
+  var FRIEND_URL = "https://lin.ee/jHsoTMi"; // LINE外で押された時のフォールバック先
+  var liffReady = false;
+  var inClient = false;
+
+  // LIFF初期化（IDが未設定なら何もしない＝従来の友だち追加URLで動く）
+  if (LIFF_ID && LIFF_ID !== "YOUR_LIFF_ID" && window.liff) {
+    liff.init({ liffId: LIFF_ID })
+      .then(function () {
+        liffReady = true;
+        inClient = liff.isInClient(); // LINEアプリ内で開かれているか
+      })
+      .catch(function (e) {
+        console.log("LIFF init error:", e);
+      });
+  }
+
+  // 3つのCTAボタンにメッセージ送信処理を紐付け
+  document.querySelectorAll(".cta-liff").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      var msg = btn.getAttribute("data-liff-msg");
+
+      // LINEアプリ内 & LIFF準備OK のときだけ自動送信
+      if (liffReady && inClient && msg) {
+        e.preventDefault(); // 通常リンク遷移を止める
+        liff.sendMessages([{ type: "text", text: msg }])
+          .then(function () {
+            // 送信成功 → トーク画面を前面に
+            if (liff.isInClient()) { liff.closeWindow(); }
+          })
+          .catch(function (err) {
+            console.log("sendMessages error:", err);
+            // 失敗時は友だち追加URLへフォールバック
+            window.open(FRIEND_URL, "_blank");
+          });
+      }
+      // それ以外（LINE外ブラウザ等）は、何もしなければ
+      // href="https://lin.ee/..." がそのまま開く（フォールバック）
+    });
+  });
+})();
+</script>
 </body>
 </html>
