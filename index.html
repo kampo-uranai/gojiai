@@ -3633,12 +3633,9 @@ footer {
         <p class="card-price">
           <strong>5,000円</strong>／LINEでお届け
         </p>
-        <a href="https://lin.ee/jHsoTMi" target="_blank" rel="noopener" class="cta-primary cta-liff" data-liff-msg="【ミニ鑑定】今の不調をひとつ、読み解いてほしいです。">
-          LINEでご案内を受け取る
+        <a href="https://kampotakeru.stores.jp/items/6a2defdfb0a302ea9e68aa76" target="_blank" rel="noopener" class="cta-primary">
+          ミニ鑑定についてはこちら
         </a>
-        <p class="cta-secondary">
-          すぐ申し込む方は <a href="https://kampotakeru.stores.jp/items/MINI_KANTEI_ID" target="_blank" rel="noopener">こちら</a>
-        </p>
       </div>
 
       <div class="counseling-card" style="margin-bottom:18px;">
@@ -3670,12 +3667,9 @@ footer {
           <strong>19,800円</strong>／90分・オンライン<br>
           体質カルテ（PDF）＋季節の漢方茶7包付き・毎月5名様限定
         </p>
-        <a href="https://lin.ee/jHsoTMi" target="_blank" rel="noopener" class="cta-primary cta-liff" data-liff-msg="【漢方占いカウンセリング】不調の根本から、私に合う方法を知りたいです。">
-          LINEでご案内を受け取る
+        <a href="https://kampotakeru.stores.jp/items/6a2df1d1b0a302f9bf68aabb" target="_blank" rel="noopener" class="cta-primary">
+          漢方占いカウンセリングについてはこちら
         </a>
-        <p class="cta-secondary">
-          すぐ予約する方は <a href="https://kampotakeru.stores.jp/items/68cf09b7925366bd7c36baf0" target="_blank" rel="noopener">こちら</a>
-        </p>
       </div>
 
       <div class="counseling-card">
@@ -5282,8 +5276,16 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault(); // 通常リンク遷移を止める
         liff.sendMessages([{ type: "text", text: msg }])
           .then(function () {
-            // 送信成功 → トーク画面を前面に
-            if (liff.isInClient()) { liff.closeWindow(); }
+            // 送信成功 → ツールは閉じず開いたまま。ボタンに送信済みを表示
+            var orig = btn.textContent;
+            btn.textContent = "✓ トークに送りました";
+            btn.style.pointerEvents = "none";
+            btn.style.opacity = "0.7";
+            setTimeout(function () {
+              btn.textContent = orig;
+              btn.style.pointerEvents = "";
+              btn.style.opacity = "";
+            }, 2500);
           })
           .catch(function (err) {
             console.log("sendMessages error:", err);
